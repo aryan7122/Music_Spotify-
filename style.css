@@ -681,9 +681,12 @@ header .song_side .populer-song .pop_song li{
     list-style-type: none;
     margin-right: 10px;
     transition: .3s linear;
+    
 }
 header .song_side .populer-song .pop_song li:hover{
     background: rgb(105, 105, 170, .1);
+    box-shadow: 0px 0px 5px black;
+
 }
 header .song_side .populer-song .pop_song li .img_play{
     position: relative;

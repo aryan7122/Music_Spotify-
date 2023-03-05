@@ -27,6 +27,7 @@
 <body>
     <header>
         <div class="menu_side">
+            <i class="bi bi-x-lg"></i>
             <h1>Playlist</h1>
             <div class="playlist">
                 <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
@@ -102,6 +103,7 @@
             </div>
         </div>
         <div class="song_side">
+             <i class="bi bi-list" id="menuopen"></i>
             <nav>
                 <ul>
                     <li>Discover <span></span></li>
@@ -217,92 +219,82 @@
                     </div>
                 </div>
                 <div class="item">
+
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/akhil.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/neha.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/justin-bieber-lede.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/jubin Nautiyal.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/honey.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/guru.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/Diljit_Dosanjh.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/dhvani.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/atif.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/alan.jpg" alt="">
                     </li>
-                    <li>
-                        <img src="img/arjit.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/arjit.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/arjit.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/arjit.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/arjit.jpg" alt="">
-                    </li>
+
+                
                 </div>
             </div>
         </div>
 
 
 
-        <div class="master_play">
-            <div class="wave" id="wave">
-                <div class="wave1"></div>
-                <div class="wave1"></div>
-                <div class="wave1"></div>
-                <div class="wave1"></div>
-            </div>
-            <img src="img/1.jpg" alt="" id="poster_master_play">
-            <h5 id="title">
-                On My Way
-                <div class="subtitle">
-                    Alan Walker
+            <div class="master_play">
+                <img src="img/1.jpg" alt="" id="poster_master_play">
+                <h5 id="title">
+                    On My Way
+                    <div class="subtitle">
+                        Alan Walker
+                    </div>
+                </h5>
+            
+                <div class="icon">
+                    <i class="bi shuffle bi-vinyl-fill">next</i>
+                    <i class="bi bi-skip-start-fill" id="back"></i>
+                    <i class="bi bi-play-fill" id="masterPlay"></i>
+                    <i class="bi bi-skip-end-fill" id="next"></i>
+                    <a href="" id="download_music"><i class="bi bi-cloud-arrow-down-fill"></i></a>
                 </div>
-            </h5>
-            <div class="icon">
-                <i class="bi shuffle bi-vinyl-fill">next</i>
-                <i class="bi bi-skip-start-fill" id="back"></i>
-                <i class="bi bi-play-fill" id="masterPlay"></i>
-                <i class="bi bi-skip-end-fill" id="next"></i>
-                <a href="" id="download_music"><i class="bi bi-cloud-arrow-down-fill"></i></a>
+                <span id="currentStart">0:00</span>
+                <div class="bar">
+                    <input type="range" id="seek" min="0" max="100">
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="currentEnd">0:00</span>
+                <div class="vol">
+                    <i class="bi bi-volume-down-fill" id="vol-icon"></i>
+                    <input type="range" min="0" max="100" id="vol">
+                    <div class="vol_bar"></div>
+                    <div class="dot" id="vol_dot"></div>
+                </div>
+                <div class="wave" id="wave">
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                </div>
+            
             </div>
-            <span id="currentStart">0:00</span>
-            <div class="bar">
-                <input type="range" id="seek" min="0" max="100">
-                <div class="bar2" id="bar2"></div>
-                <div class="dot"></div>
-            </div>
-            <span id="currentEnd">0:00</span>
-            <div class="vol">
-                <i class="bi bi-volume-down-fill" id="vol-icon"></i>
-                <input type="range" min="0" max="100" id="vol">
-                <div class="vol_bar"></div>
-                <div class="dot" id="vol_dot"></div>
-            </div>
-        </div>
     </header>
     <script src="Arjit.js"></script>
 </body>

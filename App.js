@@ -126,95 +126,113 @@ const songs = [
     },
     {
         id: 21,
-        songName: `Naia ashq na ho <br>
-                  <div class="subtitle">Alan Walker</div>`,
+        songName: `Naia Ashq Na Ho <br>
+                  <div class="subtitle">Republic Day Walker</div>`,
         poster: "img/arjit_img/1.jpg"
     },
     {
         id: 22,
-        songName: `Alan Walker-Fade <br>
-                  <div class="subtitle">Alan Walker</div>`,
+        songName: `Khairiyat (Sad)  <br>
+                  <div class="subtitle">Chhichhore</div>`,
         poster: "img/arjit_img/2.jpg"
     },
     {
         id: 23,
-        songName: `Cartoon - On & on  <br>
-                  <div class="subtitle">Daniel Levi</div>`,
+        songName: `Desh Mere <br>
+                  <div class="subtitle">Bhuj The Pride OfIndian</div>`,
         poster: "img/arjit_img/3.jpg"
     },
     {
         id: 24,
-        songName: `Warriyo - Mortals <br>
-                  <div class="subtitle">Mortals</div>`,
+        songName: `Dhokha <br>
+                  <div class="subtitle">Dhokha</div>`,
         poster: "img/arjit_img/4.jpg"
     },
     {
         id: 25,
-        songName: `Ertugrul Gazi <br>
-                  <div class="subtitle">Ertugrul</div>`,
+        songName: `Tere Yaar Hoon Main <br>
+                  <div class="subtitle">Sonu Ke Titi Ki Sweety</div>`,
         poster: "img/arjit_img/5.jpg"
     },
     {
         id: 26,
-        songName: `Elcronic Music <br>
-                  <div class="subtitle">Electro</div>`,
+        songName: `Chunar <br>
+                  <div class="subtitle">ABCD 2</div>`,
         poster: "img/arjit_img/6.jpg"
     },
     {
         id: 27,
-        songName: `Agar tum Sath Ho <br>
-                  <div class="subtitle">Tamashaa</div>`,
+        songName: `Galti se Mistake  <br>
+                  <div class="subtitle">Jagga Jasoos</div>`,
         poster: "img/arjit_img/7.jpg"
     },
     {
         id: 28,
-        songName: `Suna Hai <br>
-                  <div class="subtitle">Neha Kakker</div>`,
+        songName: `Hamari Adhuri Kahani <br>
+                  <div class="subtitle">Hamari Adhuri Kahani</div>`,
         poster: "img/arjit_img/8.jpg"
     },
     {
         id: 29,
-        songName: `Dilber <br>
-                  <div class="subtitle">Satyameva Jayate</div>`,
+        songName: `Neki ki Raah <br>
+                  <div class="subtitle">Traffic</div>`,
         poster: "img/arjit_img/9.jpg"
     },
     {
         id: 30,
-        songName: `Duniya <br>
-                  <div class="subtitle">Luka Chuppi</div>`,
+        songName: `Humdard <br>
+                  <div class="subtitle">Ek Villain</div>`,
         poster: "img/arjit_img/10.jpg"
     },
     {
         id: 31,
-        songName: `Lagdi Lahori di <br>
-                  <div class="subtitle">Street Dancer 3D</div>`,
+        songName: `mere Yaaraa <br>
+                  <div class="subtitle">Sooryavanshi</div>`,
         poster: "img/arjit_img/11.jpg"
     },
     {
         id: 32,
-        songName: `Pott Jatt Da <br>
-                  <div class="subtitle">Putt Jatt Da</div>`,
+        songName: `Nashe Si Chadh Gayi <br>
+                  <div class="subtitle">Befikre</div>`,
         poster: "img/arjit_img/12.jpg"
     },
     {
         id: 33,
-        songName: `Baarishein <br>
-                  <div class="subtitle">Atif Aslam</div>`,
+        songName: `Ae Watan <br>
+                  <div class="subtitle">Raazi</div>`,
         poster: "img/arjit_img/13.jpg"
     },
     {
         id: 44,
-        songName: `Vaaste <br>
-                  <div class="subtitle">Dhuani Bhanushali</div>`,
+        songName: `Agar tum Saath ho <br>
+                  <div class="subtitle">Tamasha</div>`,
         poster: "img/arjit_img/14.jpg"
     },
     {
         id: 35,
-        songName: `Lut Gaya <br>
-                  <div class="subtitle">Jubin nautiyal</div>`,
+        songName: `Pachtaoge <br>
+                  <div class="subtitle">Jaani ve</div>`,
         poster: "img/arjit_img/15.jpg"
     }
 ]
+
+
+// playlis resonsive
+
+let menu_sides = document.getElementsByClassName('menu_side')[0];
+let xxx = document.getElementsByClassName('bi-x-lg')[0];
+xxx.addEventListener("click", () => {
+    menu_sides.style.display = "none"
+})
+// let menu_sides = document.getElementsByClassName('menu_side')[0];
+let bilist = document.getElementsByClassName('bi-list')[0];
+bilist.addEventListener("click", () => {
+    menu_sides.style.display = "block"
+})
+
+
+// 
+
 
   // song array list
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
@@ -310,7 +328,7 @@ const makeAllplays = () => {
         el.classList.add('bi-stop-fill')
         el.classList.remove('bi-play-fill')
     })
-    Array.from(document.getElementsByClassName('playListPlay'))[index - 1].classList.toggle('bi-stop-fill');
+    Array.from(document.getElementsByClassName('playListPlay'))[index -1].classList.toggle('bi-stop-fill');
 }
 
 const makeallBackground = () => {
@@ -360,7 +378,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=> {
             download_music.setAttribute('download', songName);
         })
         makeallBackground();
-        Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = 'rgb(105, 105, 105, .1)';
+        Array.from(document.getElementsByClassName('songItem'))[index -1].style.background = 'black';
         // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].style.color = 'rgb(0, 255, 153)';
         
         makeAllplays();
@@ -472,7 +490,7 @@ back.addEventListener('click', () => {
         title.innerHTML = songName;
     })
     makeallBackground();
-    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = 'rgb(105, 105, 105, .1)';
+    Array.from(document.getElementsByClassName('songItem'))[index -1].style.background = 'black';
     // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].style.color = 'rgb(0, 255, 153)';
 
     makeAllplays();
@@ -482,12 +500,11 @@ back.addEventListener('click', () => {
    
 })
 next.addEventListener('click', () => {
-    index += 1;
+    index++;
     let ll = Array.from(document.getElementsByClassName('songItem')).length;
-    if ( index  > ll) {
+    if ( index > ll) {
         index = 1;
         // index = Array.from(document.getElementsByClassName('songItem')).length;
-
     }
     // console.log(index)
     music.src = `audio/${index}.mp3`
@@ -514,7 +531,7 @@ next.addEventListener('click', () => {
         title.innerHTML = songName;
     })
     makeallBackground();
-    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = 'rgb(105, 105, 105, .1)';
+    Array.from(document.getElementsByClassName('songItem'))[index -1].style.background = 'black';
     // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].style.color = 'rgb(0, 255, 153)';
 
     makeAllplays();
@@ -589,7 +606,7 @@ const next_music = () => {
         download_music.setAttribute('download', songName);
     })
     makeallBackground();
-    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = 'rgb(105, 105, 105, .1)';
+    Array.from(document.getElementsByClassName('songItem'))[index -1].style.background = 'black';
     // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].style.color = 'rgb(0, 255, 153)';
 
     makeAllplays();
@@ -628,7 +645,7 @@ const repeat_music = () => {
         download_music.setAttribute('download', songName);
     })
     makeallBackground();
-    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = 'rgb(105, 105, 105, .1)';
+    Array.from(document.getElementsByClassName('songItem'))[index -1].style.background = 'black';
     // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].style.color = 'rgb(0, 255, 153)';
 
     makeAllplays();
@@ -671,7 +688,7 @@ const random_music = () => {
         download_music.setAttribute('download', songName);
     })
     makeallBackground();
-    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = 'rgb(105, 105, 105, .1)';
+    Array.from(document.getElementsByClassName('songItem'))[index -1].style.background = 'black';
     // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].style.color = 'rgb(0, 255, 153)';
 
     makeAllplays();
@@ -694,7 +711,7 @@ music.addEventListener('ended', () => {
                 break;
         }
 })
-// 
-// 
-// 
+//
+//
+//
 // 

@@ -60,14 +60,10 @@
     header .master_pl img {
         width: 400px;
         height: 400px;
-        margin: auto 0;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin-top: 10vh;
+        margin-top: 5vh;
         box-shadow: 0px 0px 10px 5px black;
-        /* border-radius: 50%; */
-        /* margin-right: 20%; */
+        border-radius: 50%;
+        margin-left: 20%;
         padding: 10px;
     }
 
@@ -101,12 +97,12 @@
         width: 90%;
         margin: 10px 10px 10px 10px;
         margin: auto;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         /* position: relative; */
     }
         header .master_pl #currentEnd{
             position: absolute;
-            margin-left: 90%;
+            margin-left: 92%;
             margin-top: -3%;
         }
         header .master_play #currentEnd{
@@ -120,7 +116,7 @@
             /* margin-top: -3%; */
         }
         header .master_pl #currentStart{
-            /* margin-top: 4%; */
+            /* margin-top: -4%; */
         }
 
     header .bi-chevron-double-down {
@@ -135,55 +131,177 @@
 
 @media only screen and (max-width: 600px) {
     header .master_play .bar{
-        position: absolute;
+        position: absolute; 
         margin-bottom: 15%;
         margin-left: -3.3%;
     }
     header .master_play .wave {
-     /* display: block; */
+     /* display: none; */
     }
+     header .master_pl img {
+      margin-left: 10%;
+    }
+     header .master_pl #currentEnd {
+     position: relative;
+     left: 85%;
+     margin: auto;
+     /* position: absolute; */
+     /* margin-right: -20px; */
+     /* margin-bottom: -20px; */
+     /* margin-left: 90%; */
+      }
+     header .master_pl #currentStart {
+     position: relative;
+     margin-bottom: 20px;
+      }
+    header .master_pl .bar {
+        width: 75%;
+        margin-left: 8%;
+        margin-top: -6px;
+        /* position: absolute; */
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    header .master_play .wave {
+            display: none;
+            /* margin-left: 0px; */
+            /* position: ; */
+        }
 }
 @media only screen and (max-width: 530px) {
     header .song_side nav .user i{
         margin-right: 30px;
     }
+         header .master_play .icon {
+             /* border: 1px solid #fff; */
+             /* min-width: 160px; */
+         }
+    header .master_pl .bar{
+        /* width: 80%; */
+        /* margin-left: 20%; */
+        position: absolute;
+    }
+    header .master_play img {
+        width: 60px;
+        height: 60px;
+        /* margin-left: -8%; */
+        /* margin-top: 14px; */
+        }
+    header .master_pl img {
+        width: 399px;
+        height: 399px;
+        margin-left: 10%;
+        }
     header .song_side nav .search{
         margin-left: 50px;
-        
-    display: flex;
+     display: flex;
     }
 
     header .master_play .wave {
             /* display: none; */
-            margin-left: 0px;
+            /* margin-left: 0px; */
             /* position: ; */
         }
-      header .master_play .icon  {
-        border: 1px solid #fff;
-        min-width: 160px;
-      }
+      /* header .master_play .icon  { */
+        /* border: 1px solid #fff; */
+        /* min-width: 160px; */
+      /* } */
           header .song_side nav ul{
             display: none;
           }
-      header .master_play .icon .bi:nth-child(1) {
-       /* margin-left: 16%; */
-       display: none;
+      header .master_pl .icon .bi:nth-child(1) {
+       margin-left: -5%;
+       /* display: none; */
     }
+
+        /* header .master_pl #currentEnd { */
+           /* margin-left: -15%; */
+        /* position: relative; */
+            /* left: 85%; */
+            /* margin: auto; */
+           /* padding: 3px; */
+           /* margin: 5px; */
+        /* } */
+
         header .master_play #currentEnd {
-           display: none;
+           /* display: none; */
+           /* opacity: 0; */
         }
     
         header .master_play #currentStart {
-            display: none;
+            /* display: none; */
+            /* opacity: 0; */
         }
-         header .master_play img {
-            height: 50px;
-            height: 50px;
-         }
-     header .master_play .bar{
+     /* header .master_play .bar{
         margin-bottom: 15%;
         margin-left: -6%;
+     } */
+}
+@media only screen and (max-width: 440px) {
+        header .master_play .wave {
+                display: none;
+                /* margin-left: 0px; */
+                /* position: ; */
+            }
+                        header .master_pl img {
+                            width: 359px;
+                            height: 359px;
+                            margin-left: 2%;
+                        }
+   header .master_pl .icon .bi:nth-child(1) {
+         margin-left: -10%;
+    }
+        header .master_play #currentStart {
+            /* margin-left: -10%; */
+            /* display: flex; */
+            /* position: relative; */
+        }
+        header .master_play .icon {
+            min-width: 210px;
+        }
+}
+@media only screen and (max-width: 400px) {
+            header .master_pl #currentEnd {
+                    /* display: block; */
+                }
+   header .master_play .icon .bi:nth-child(1) {
+    /* display: flex; */
+                      /* margin-left: -10%; */
      }
+           header .master_pl img {
+            width: 330px;
+            height: 300px;
+            margin-left: -1%;
+           }
+                header .master_pl #currentStart {
+                    /* display: block; */
+                }
+
+                  header .master_play .icon {
+                      /* border: 1px solid #fff; */
+                      min-width: 160px;
+                      margin-top: 15%;
+                      margin-left: 1%;
+                  }
+                  header .master_pl .icon {
+                      /* border: 1px solid #fff; */
+                      margin-top: 20%;
+                      margin-left: 7%;
+                  }
+
+         header .master_pl .icon .bi:nth-child(1) {
+             /* margin-left: 189%; */
+         }
+         header .master_play .icon .bi:nth-child(1) {
+             /* margin-left: -188%; */
+         }
+
+                   header .master_play .wave {
+                       /* display: flex; */
+                       /* margin-left: 0px; */
+                       /* position: ; */
+                   }
 }
 @media only screen and (max-width: 1010px) {
     header .menu_side {

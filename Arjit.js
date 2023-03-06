@@ -117,11 +117,13 @@ bilist.addEventListener("click", () => {
 let up = document.getElementsByClassName('bi-chevron-double-up')[0];
 let down = document.getElementsByClassName('bi-chevron-double-down')[0];
 let master_plays = document.getElementsByClassName('master_play')[0];
+let master_pl = document.getElementsByClassName('master_pl');
 // master_play_mobil
 up.addEventListener("click", () => {
     up.classList.toggle('bi-chevron-double-up');
     up.classList.toggle('bi-chevron-double-down');
     master_plays.classList.toggle('master_play_mobil');
+    master_plays.classList.toggle('master_pl');
 })
 
 //

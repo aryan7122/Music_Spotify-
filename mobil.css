@@ -282,7 +282,7 @@
                   header .master_play .icon {
                       /* border: 1px solid #fff; */
                       min-width: 160px;
-                      margin-top: 18%;
+                      margin-top: 20%;
                       margin-left: 1%;
                   }
                   header .master_pl .icon {
@@ -297,6 +297,9 @@
          header .master_play .icon .bi:nth-child(1) {
              /* margin-left: -188%; */
          }
+                  header .master_play .bar{
+                    margin-left: -5.5%;
+                  }
                   header .master_pl .bar{
                     margin-top: 10%;
                     margin: auto;

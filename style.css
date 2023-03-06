@@ -268,8 +268,8 @@ header .master_play .active1:nth-child(3) {
 header .master_play img {
     margin-left: -20px;
     width: 77px;
-    height: 77px;
-
+    height: auto;
+    position: sticky;
 }
 header .master_play h5 {
     margin-right: 10vh;

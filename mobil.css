@@ -7,9 +7,7 @@
         display: block;
         margin: auto;
     }
-    header .master_play .wave{
-        display: none;
-    }
+
     header .master_pl .wave{
         display: none;
     }
@@ -135,6 +133,58 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+    header .master_play .bar{
+        position: absolute;
+        margin-bottom: 15%;
+        margin-left: -3.3%;
+    }
+    header .master_play .wave {
+     /* display: block; */
+    }
+}
+@media only screen and (max-width: 530px) {
+    header .song_side nav .user i{
+        margin-right: 30px;
+    }
+    header .song_side nav .search{
+        margin-left: 50px;
+        
+    display: flex;
+    }
+
+    header .master_play .wave {
+            /* display: none; */
+            margin-left: 0px;
+            /* position: ; */
+        }
+      header .master_play .icon  {
+        border: 1px solid #fff;
+        min-width: 160px;
+      }
+          header .song_side nav ul{
+            display: none;
+          }
+      header .master_play .icon .bi:nth-child(1) {
+       /* margin-left: 16%; */
+       display: none;
+    }
+        header .master_play #currentEnd {
+           display: none;
+        }
+    
+        header .master_play #currentStart {
+            display: none;
+        }
+         header .master_play img {
+            height: 50px;
+            height: 50px;
+         }
+     header .master_play .bar{
+        margin-bottom: 15%;
+        margin-left: -6%;
+     }
+}
 @media only screen and (max-width: 1010px) {
     header .menu_side {
         display: none;

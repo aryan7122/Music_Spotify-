@@ -1,0 +1,196 @@
+@media only screen and (max-width: 800px){
+
+    header .master_pl {
+        /* display: none; */
+        /* position: absolute; */
+        /* border: 2px solid red; */
+        display: block;
+        margin: auto;
+    }
+    header .master_play .wave{
+        display: none;
+    }
+    header .master_pl .wave{
+        display: none;
+    }
+    header .master_play .icon{
+        margin-left: 10%;
+    }
+    header .master_pl .icon{
+        position: absolute;
+        /* border: 2px solid red; */
+        margin-top: 10%;
+        font-size: 50px;
+        width: 100%;
+        display: flex;
+        /* margin: auto; */
+    }
+    header .master_pl .icon .bi:nth-child(1) {
+            margin-left: 0%;
+            margin-top: -40px;
+    }
+    header .master_pl .icon .bi:nth-child(2) {
+    
+            margin-left: 10%;
+    }
+    header .master_pl .icon .bi:nth-child(3) {
+    
+            margin-left: 15%;
+    }
+    header .master_pl .icon .bi:nth-child(4) {
+    
+            margin-left: 16%;
+    }
+    header .master_play_mobil {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .bi-chevron-double-up {
+        color: #fff;
+        font-size: 30px;
+    }
+    #barr{
+        /* display: flex; */
+    }
+    .bi-chevron-double-down {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    header .master_pl img {
+        width: 400px;
+        height: 400px;
+        margin: auto 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 10vh;
+        box-shadow: 0px 0px 10px 5px black;
+        /* border-radius: 50%; */
+        /* margin-right: 20%; */
+        padding: 10px;
+    }
+
+    header .master_play h5{
+        display: none;
+    } 
+    header .master_pl h5 {
+        font-size: 20px;
+        /* border: 1px solid pink; */
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5%;
+        display: block;
+    }
+
+    header .master_pl h5 .subtitle {
+        font-size: 15px;
+    }
+    header .master_pl .vol {
+        display: none;
+    }
+  header .master_play .vol {
+      display: none;
+  }
+
+    header .master_pl .bar {
+        /* position: absolute; */
+        margin-top: -70px;
+        width: 90%;
+        margin: 10px 10px 10px 10px;
+        margin: auto;
+        /* border: 1px solid red; */
+        /* position: relative; */
+    }
+        header .master_pl #currentEnd{
+            position: absolute;
+            margin-left: 90%;
+            margin-top: -3%;
+        }
+        header .master_play #currentEnd{
+            /* position: absolute; */
+            /* margin-left: -10px; */
+            /* margin-top: -3%; */
+        }
+        header .master_play #currentStart{
+            /* position: absolute; */
+            margin-right: 10px;
+            /* margin-top: -3%; */
+        }
+        header .master_pl #currentStart{
+            /* margin-top: 4%; */
+        }
+
+    header .bi-chevron-double-down {
+        top: 0;
+        right: 0;
+        margin: 10px;
+        position: absolute;
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 1010px) {
+    header .menu_side {
+        display: none;
+        z-index: 9;
+        position: absolute;
+        width: 270px;
+
+    }
+
+    header .song_side .bi-list {
+        display: block;
+        /* margin-left: 220px; */
+        margin-top: 10px;
+
+        font-size: 40px;
+        z-index: 9;
+        position: absolute;
+    }
+
+    header .menu_side .bi-x-lg {
+        display: block;
+        margin-left: 220px;
+        font-size: 40px;
+        z-index: 9;
+        position: absolute;
+    }
+
+    header .song_side .bi-list:hover {
+        color: rgb(223, 222, 222);
+    }
+
+    header .song_side {
+        z-index: 2;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    header .menu_side .bi-x-lg:hover {
+        color: rgb(154, 154, 154);
+    }
+
+    header .song_side {
+        z-index: 2;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+}
+
+   /* header .master_play .bar 
+       position: absolute;
+       width: 100%;
+       height: 5px;
+       background: rgb(105, 105, 170, .1);
+       margin: 0px 15px 0px 10px;
+       bottom: 10%;
+       /* position: absolute; */
+       /* margin-left: -2.7%; */
+       /* border: 1px solid red; */

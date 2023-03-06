@@ -7,6 +7,7 @@
     <title>Music🎧</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobil.css">
 
 </head>
 <body>
@@ -480,7 +481,8 @@
 
 
 
-        <div class="master_play">
+        <div class="master_play " >
+                       
             <img src="img/1.jpg" alt="" id="poster_master_play">
             <h5 id="title">
                 On My Way 
@@ -496,13 +498,13 @@
                 <i class="bi bi-skip-end-fill" id="next"></i>
                 <a href="" id="download_music" ><i class="bi bi-cloud-arrow-down-fill" ></i></a>
             </div>
-            <span id="currentStart">0:00</span>
-            <div class="bar">
-                <input type="range" id="seek" min="0" max="100">
-                <div class="bar2" id="bar2"></div>
-                <div class="dot"></div>
-            </div>
-            <span id="currentEnd">0:00</span>
+                <span id="currentStart">0:00</span>
+                <div class="bar">
+                    <input type="range" id="seek" min="0" max="100">
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="currentEnd">0:00</span>
             <div class="vol">
                 <i class="bi bi-volume-down-fill" id="vol-icon"></i>
                 <input type="range" min="0" max="100" id="vol">
@@ -515,7 +517,7 @@
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            
+            <i class="bi bi-chevron-double-up"></i>
         </div>
     </header>
     <script src="App.js"></script>

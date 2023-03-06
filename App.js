@@ -231,8 +231,22 @@ bilist.addEventListener("click", () => {
 })
 
 
-// 
+//
 
+// playbar up ^
+let up = document.getElementsByClassName('bi-chevron-double-up')[0];
+let down = document.getElementsByClassName('bi-chevron-double-down')[0];
+let master_plays = document.getElementsByClassName('master_play')[0];
+let master_pl = document.getElementsByClassName('master_pl');
+// master_play_mobil
+ up.addEventListener("click", () => {
+    up.classList.toggle('bi-chevron-double-up');
+    up.classList.toggle('bi-chevron-double-down');
+    master_plays.classList.toggle('master_play_mobil');
+     master_plays.classList.toggle('master_pl');
+ })
+
+//
 
   // song array list
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
@@ -255,6 +269,9 @@ songs.forEach(element => {
                             </div>`
     search_results.appendChild(card);
 });
+
+
+
 let input = document.getElementsByTagName('input')[0];
 input.addEventListener('keyup', () => {
     let input_value = input.value.toUpperCase();

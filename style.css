@@ -70,7 +70,6 @@ header .song_side{
     background: #0b1320;
 }
 header .master_play{
-
     width: 100%;
     height: 10%;
     /* border:1px solid #00ff04; */
@@ -284,10 +283,10 @@ header .master_play h5 {
     white-space: nowrap;
     font-size: 14px;
     /* left: 5%; */
-    /* position: absolute; */
+    position: relative;
 }
-header .master_play #currentEnd {
-}
+/* header .master_play #currentEnd {
+} */
 header .master_play h5 .subtitle {
     font-size: 11px;
     overflow: hidden;
@@ -359,7 +358,7 @@ header .master_play span{
     font-weight: 400;
 }
 header .master_play #currentStart{
-    margin: 0px 20px 0px 20px;
+    /* margin: 0px 20px 0px 20px; */
 }
 
 header .master_play .bar{
@@ -400,7 +399,7 @@ header .master_play .bar .dot::before{
     width: 20px;
     height: 20px;
     border: 1px solid #36e2ec;
-    /* border-radius: 50%; */
+    border-radius: 20%;
     left: -6px;
     top: -6px;
     box-shadow:  inset 0px 0px 4px  #36e2ec;
@@ -859,64 +858,7 @@ header .song_side .populer_artists .item li img{
 
 /* //////////////////////////mobile style//////////////////////// */
 
-@media only screen and (max-width: 800px) {
-    header .master_play .bar {
-            position: absolute;
-            width: 100%;
-            height: 5px;
-            background: rgb(105, 105, 170, .1);
-            margin: 0px 15px 0px 10px;
-            bottom: 10%;
-            /* position: absolute; */
-            margin-left: -2.7%;
-            /* border: 1px solid red; */
-        }
-}
 
-@media only screen and (max-width: 1010px) {
-    header .menu_side {
-          display:none ;
-           z-index: 9;
-           position: absolute;
-           width: 270px;
-
-        }
-
-    header .song_side .bi-list{
-           display:block;
-           /* margin-left: 220px; */
-           margin-top: 10px;
-
-           font-size: 40px;
-           z-index: 9;
-           position: absolute;
-        }
-    header .menu_side .bi-x-lg{
-           display:block;
-           margin-left: 220px;
-           font-size: 40px;
-           z-index: 9;
-           position: absolute;
-        }
-    header .song_side .bi-list:hover{
-           color: rgb(223, 222, 222);
-        }
-        header .song_side {
-            z-index: 2;
-            /* border: 1px solid red; */
-            width: 100%;
-        }
-    header .menu_side .bi-x-lg:hover{
-           color: rgb(154, 154, 154);
-        }
-
-        header .song_side {
-            z-index: 2;
-            /* border: 1px solid red; */
-            width: 100%;
-        }
-        
-}
 .bi-list{
     display: none;
 }

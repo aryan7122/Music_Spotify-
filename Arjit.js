@@ -111,7 +111,7 @@ bilist.addEventListener("click", () => {
 })
 
 //
-
+// bi-play-fill
 
 // playbar up ^
 let up = document.getElementsByClassName('bi-chevron-double-up')[0];
@@ -145,6 +145,7 @@ masterPlay.addEventListener('click', ()=> {
         wave.classList.add('active1');
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
+        alert(astart)
     } else {
         music.pause();
         wave.classList.remove('active1');
@@ -183,11 +184,11 @@ pop_art_left.addEventListener('click', () => {
 })
 // 2. scroll end
 const makeAllplays = () => {
-    Array.from(Document.getElementsByClassName('playListPlay')).forEach((el) => {
-        el.classList.add('bi-stop-fill')
-        el.classList.remove('bi-play-fill')
+    Array.from(document.getElementsByClassName('playListPlay')).forEach((el) => {
+        el.classList.add('bi-play-fill');
+        el.classList.remove('bi-pause-fill');
     })
-    Array.from(document.getElementsByClassName('playListPlay'))[index - 1].classList.toggle('bi-stop-fill');
+    // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].classList.toggle('bi-stop-fill');
 }
 
 const makeallBackground = () => {
@@ -209,9 +210,10 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=> {
         index = el.target.id;
         // console.log(index);
         music.src = `audio/arjit_audio/${index}.mp3`
-        // music.play();
         poster_master_play.src = `img/arjit_img/${index}.jpg`
-        
+        music.play();
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
         if (music.paused || music.currentTime <= 0) {
             music.play();
             wave.classList.add('active1');
@@ -241,9 +243,8 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=> {
         // Array.from(document.getElementsByClassName('playListPlay'))[index - 1].style.color = 'rgb(0, 255, 153)';
         
         makeAllplays();
-        el.target.classList.remove('bi-stop-fill');
-        el.target.classList.add('bi-play-fill');
-        el.target.classList.toggle('bi-stop-fill');
+        el.target.classList.remove('bi-play-fill');
+        el.target.classList.add('bi-pause-fill');
       
     })
 })
@@ -273,7 +274,7 @@ music.addEventListener('timeupdate', () => {
     let progressBar = parseInt((music_curr / music_dur) * 100);
     bar2.style.width = progressBar +'%';
     dot.style.left = progressBar +'%';
-    dot.style.background = red;
+    // dot.style.background = red;
 
     /////
 })
@@ -355,7 +356,7 @@ back.addEventListener('click', () => {
     makeAllplays();
     el.target.classList.remove('bi-stop-fill');
     el.target.classList.add('bi-play-fill');
-    el.target.classList.toggle('bi-stop-fill');
+    // el.target.classList.toggle('bi-stop-fill');
    
 })
 next.addEventListener('click', () => {
